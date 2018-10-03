@@ -15,3 +15,7 @@ CPU与主存储器之间，提前读取主存储器的数据放入自己的储�
 
 相比于主存储器来说，Cache的存储空间更小，读取速度较高，起到了连接主存储器和CPU的桥梁作用
 
+## 三、Cache的结构是什么样子的？
+
+![image](https://img-blog.csdn.net/20171115142152426?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzE1MDU0ODM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
