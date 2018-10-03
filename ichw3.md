@@ -17,5 +17,19 @@ CPU与主存储器之间，提前读取主存储器的数据放入自己的储�
 
 ## 三、Cache的结构是什么样子的？
 
-![image](https://img-blog.csdn.net/20171115142152426?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzE1MDU0ODM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://raw.githubusercontent.com/Dead-fisher/ichw/master/20171115142152426.png)
+
+该结构简化在平面中为：
+
+![image](https://raw.githubusercontent.com/Dead-fisher/ichw/master/TIM%E5%9B%BE%E7%89%8720181003203127.png)
+
+此两图为Cache的结构简图。
+
+其中，Data为储存的数据，Tag为数据的地址信息，Valid则指出了该数据是否保留了有效位数，即能否有效被调用。
+
+![image](https://raw.githubusercontent.com/Dead-fisher/ichw/master/Inked%E4%B8%BB%E5%AD%98%E4%B8%8E%E7%BC%93%E5%AD%98_LI.jpg)
+
+在主存和缓存中，都是以块为单位进行存储的，假设主存有M块，缓存有C块，那么就有M>>C.
+
+而被从主存中提取并放入缓存的数据来说，其在主存的数据与在缓存的数据完全相同，因此只要地址信息准确，CPU可以直接从Cache中进行读取到数据并进行读写。
 
