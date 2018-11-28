@@ -60,7 +60,7 @@ def draw_plants(planet, a, b, v, n):
 
 def main():
     for i in range(7):
-        set(planets[i], color[i], major_axis[i], minor_axis[i])
+        set_planets(planets[i], color[i], major_axis[i], minor_axis[i])
     Sun.dot(50)  # Draw the sun at the focus of these ellipse.
     for i in range(10000):
         for x in range(6):
